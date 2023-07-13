@@ -4,6 +4,8 @@ import React from "react";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import "./Navbar.css"
 import Toggle from "../Toggle/Toggle";
+import ToggleLanguage from "../Toggle/ToggleLanguage";
+
 import { Icon } from "@chakra-ui/react";
 import { FaHome } from "react-icons/fa";
 import logoIcon from '../../assets/imagenes/favicon/logopng_opx_icon.ico'; // Asegúrate de proporcionar la ruta correcta al archivo .ico
@@ -101,6 +103,7 @@ const Navbar = ({ materiales }) => {
             </Box>
             <Box>
                 <Toggle />
+                <ToggleLanguage />
             </Box>
         </Flex>
     );
