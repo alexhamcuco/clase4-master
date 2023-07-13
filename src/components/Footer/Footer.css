@@ -1,0 +1,12 @@
+.logo-imagen {
+	transition: filter 0.1s ease-in-out;
+}
+
+.logo-imagen:hover {
+	/* filter: brightness(1); */
+	/* filter: opacity(50%); */
+	/* filter: contrast(200%) sepia(100%) brightness(0.5); */
+	filter: brightness(100%);
+	/* filter: grayscale(70%); */
+	/* filter: blur(5px); */
+}

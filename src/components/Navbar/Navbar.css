@@ -1,0 +1,32 @@
+.logo-imagen img {
+	transform: scale(0.75);
+}
+
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+h2 {
+	/* color: white; */
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbartext {
+	/* color: white; */
+	font-family: 'Roboto', sans-serif;
+	padding: 0.5rem; /* Ajusta el valor del padding según tus necesidades */
+}
+.logo-imagen {
+	transition: filter 0.1s ease-in-out;
+}
+
+.logo-imagen:hover {
+	/* filter: brightness(1); */
+	/* filter: opacity(50%); */
+	/* filter: contrast(200%) sepia(100%) brightness(0.5); */
+	filter: sepia(100%);
+	/* filter: grayscale(70%); */
+	/* filter: blur(5px); */
+}
