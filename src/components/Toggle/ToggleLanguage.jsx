@@ -1,8 +1,8 @@
 import { useColorMode, IconButton, Switch, Box, Icon, Text } from "@chakra-ui/react";
-import { MdSettings } from 'react-icons/md';
 
 const ToggleLanguage = () => {
     const { colorMode, toggleColorMode } = useColorMode();
+    console.log(colorMode);
 
     return (
         <IconButton
@@ -19,10 +19,7 @@ const ToggleLanguage = () => {
                 >
                     {colorMode === "light" ? "S" : "E"}
                 </Text>
-                <Icon
-                    as={MdSettings}
-                    boxSize={6} // Tamaño del icono
-                />
+
             </Box>
         </IconButton>
     );

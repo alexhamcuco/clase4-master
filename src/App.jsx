@@ -77,74 +77,73 @@ function App() {
   console.log(materiales)
 
   return (
-    <>
-      <div>
+    <div className="container">
 
-        {loading ? (
-          <LoadingIndicator /> // Muestra el indicador de carga mientras loading sea true
-        ) : (
-          <>
+      {loading ? (
+        <LoadingIndicator /> // Muestra el indicador de carga mientras loading sea true
+      ) : (
+        <>
 
-            <Navbar materiales={materiales} />
-
-
-            <Routes>
-
-              <Route path="/home" element={
-                <>
-                  <ImagenPortadaComponente imagenPortada={imagenPortada} />
-                  <ComponenteSeparador />
-                  <Testimonials />
-                  <ComponenteSeparador />
-
-                  <PriceTable />
-                  <ComponenteSeparador />
+          <Navbar materiales={materiales} />
 
 
-                  <ReservaFacil />
-                  <ComponenteSeparador />
+          <Routes>
 
-                  <Video />
-                  <ComponenteSeparador />
+            <Route path="/home" element={
+              <>
+                <ImagenPortadaComponente imagenPortada={imagenPortada} />
+                <ComponenteSeparador />
+                <Testimonials />
+                <ComponenteSeparador />
 
-                </>
-              } />
-              <Route path='/materiales' element={<Datos materiales={materiales} />} />
-              <Route path='/materiales/:tipo' element={<Datos materiales={materiales} />} />
-              <Route path='/materiales/:tipo/:titulo' element={<CardDetalle materiales={materiales} />} />
-              <Route path='/suscripcion' element={<TextoComponente />} />
-              <Route path='/FormularioMateriales' element={<FormularioMateriales />} />
+                <PriceTable />
+                <ComponenteSeparador />
 
 
-              <Route path='/terminos-y-condiciones' element={<Condiciones />} />
-              <Route path='/politica-de-privacidad' element={<Privacidad />} />
-              <Route path='/contacto' element={< Contacto />} />
-              <Route path='/cookies' element={< Cookies />} />
-              <Route path='/alejandro-rodriguez' element={< About />} />
+                <ReservaFacil />
+                <ComponenteSeparador />
 
-              <Route path='materiales/videos/retrasos-aviones' element={< RetrasosAviones />} />
-              <Route path='materiales/videos/retrasos-aviones' element={< RetrasosAviones />} />
-              <Route path='materiales/videos/un-dia-en-la-playa-A1' element={< RetrasosAviones />} />
-              <Route path='materiales/Ejercicios/verde-que-te-quiero' element={< RetrasosAviones />} />
-              <Route path='materiales/videos/retrasos-aviones' element={< RetrasosAviones />} />
+                <Video />
+                <ComponenteSeparador />
 
-              <Route path='*' element={<Navigate to='/home' />} />
+              </>
+            } />
+            <Route path='/materiales' element={<Datos materiales={materiales} />} />
+            <Route path='/materiales/:tipo' element={<Datos materiales={materiales} />} />
+            <Route path='/materiales/:tipo/:titulo' element={<CardDetalle materiales={materiales} />} />
+            <Route path='/suscripcion' element={<TextoComponente />} />
+            <Route path='/FormularioMateriales' element={<FormularioMateriales />} />
 
+
+            <Route path='/terminos-y-condiciones' element={<Condiciones />} />
+            <Route path='/politica-de-privacidad' element={<Privacidad />} />
+            <Route path='/contacto' element={< Contacto />} />
+            <Route path='/cookies' element={< Cookies />} />
+            <Route path='/alejandro-rodriguez' element={< About />} />
+
+            <Route path='materiales/videos/retrasos-aviones' element={< RetrasosAviones />} />
+            <Route path='materiales/videos/retrasos-aviones' element={< RetrasosAviones />} />
+            <Route path='materiales/videos/un-dia-en-la-playa-A1' element={< RetrasosAviones />} />
+            <Route path='materiales/Ejercicios/verde-que-te-quiero' element={< RetrasosAviones />} />
+            <Route path='materiales/videos/retrasos-aviones' element={< RetrasosAviones />} />
+
+            <Route path='*' element={<Navigate to='/home' />} />
 
 
 
 
 
-            </Routes>
 
-            <Footer />
+          </Routes>
 
-          </> //parte final d para el indicador de loading, la linea siguiente tambien
-        )}
+          <Footer />
 
-      </div >
+        </> //parte final d para el indicador de loading, la linea siguiente tambien
+      )}
 
-    </>
+    </div >
+
+
   )
 }
 
